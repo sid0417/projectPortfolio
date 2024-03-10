@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d77ffa090a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <div id="container-header"> -->
+      <header>
+        <h2 class="logo">Siddharth<b class="dot">.</b></h2>
+        <nav class="navbar">
+          <ul id="sidemenu">
+            <a href="#container-header" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </nav>
+      </header>  
+      <section class="parallax">
+          <img src="image/hill1.png" id="hill1" alt="">
+          <img src="image/hill2.png" id="hill2" alt="">
+          <img src="image/hill3.png" id="hill3" alt="">
+          <img src="image/hill4.png" id="hill4" alt="">
+          <img src="image/hill5.png" id="hill5" alt="">
+          <img src="image/tree.png" id="tree" alt="">
+          <h3 id="header-text">Hello, <br><span id="element"></span></h3>  
+          <img src="image/leaf.png" id="leaf" alt="">
+          <img src="image/plant.png" id="plant" alt="">
+        </section>
+      <!-- </div> -->
+    <!----------about--------->
+    <section class="sec2">
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img class="myimage" src="image/resume picusing.jpg" alt="">
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Results-driven software engineer with a strong foundation in Java,
+              Python, and JavaScript. Adept at problem-solving and committed to
+              staying current with emerging technologies. Eager to contribute
+              technical expertise to a dynamic software development role.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('codPrf')">
+                Coding Profiles
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br />Bachelor of Technology(IT) from MSIT
+                  Kolkata<br />9.3 till now
+                </li>
+                <li>
+                  <span>2019</span><br />XII from Vidya Niketan Kolkata<br />81.4%
+                </li>
+                <li>
+                  <span>2017</span><br />X from Vidya Niketan Kolkata<br />80.2%
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="codPrf">
+              <ul>
+                <li>
+                  <a href="https://leetcode.com/sidd_1708/"
+                    ><span>Leetcode</span></a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.hackerrank.com/profile/roysid1708"
+                    ><span>Hackerrank</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------skills----- -->
+    <div id="skills">
+      <div class="container">
+        <div class="skills-row">
+        <div class="skills-col1">   <h1 class="sub-title-skills">My Skills</h1>
+          <div class="tab-titles-skills">
+            <p class="tab-links-skills active-link-skills" onclick="opentabSkills('languages')">Languages</p>
+            <p class="tab-links-skills" onclick="opentabSkills('development')">Development</p>
+            <p class="tab-links-skills" onclick="opentabSkills('core')">Core</p>
+          </div>
+          <div class="tab-contents-skills active-tab-skills" id="languages">
+            <ul>
+              <li><i class="fa-brands fa-java"></i><span> Java</span></li>
+              <li><i class="fa-brands fa-python"></i><span> Python</span></li>
+              <li><i class="fa-brands fa-html5"></i><span> HTML</span></li>
+              <li><i class="fa-brands fa-js"></i><span> JavaScript</span></li>
+              <li><i class="fa-solid fa-database"></i><span> SQL</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents-skills" id="development">
+            <ul>
+              <li><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
+              <li><i class="fa-brands fa-react"></i><span> React.js</span></li>
+              <li><i class="fa-brands fa-bootstrap"></i><span> Bootstrap</span></li>
+              <li><i class="fa-brands fa-git-alt"></i><span> Git & Github</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents-skills" id="core">
+            <ul>
+              <li><span> Object Oriented Programming</span></li>
+              <li><span> Operating System</span></li>
+              <li><span> DBMS</span></li>
+            </ul>
+          </div></div>
+       <div class="skills-col2">
+        <img src="image/treeskills.png" class="treeskills" alt="">
+        <img src="image/smalltree.png" class="smalltree"alt="">
+        <img src="image/javaskills.png" class="fruits javaskills" alt="">
+        <img src="image/htmlskills.png" class="fruits htmlskills"alt="">
+        <img src="image/jsskills.png" class="fruits jsskills"alt="">
+        <img src="image/pythonskills.png"class="fruits pythonskills" alt="">
+        <img src="image/reactskills.png" class="fruits reactskills"alt="">
+        <img src="image/cssskills.png" class="fruits cssskills"alt="">
+        <img src="image/grass.png" class="grass g1" alt="">
+        <img src="image/grass.png" class="grass g2" alt="">
+        <img src="image/grass.png" class="grass g3" alt="">
+        <img src="image/groundskills.png" class="groundskills" alt="">
+        
+       </div>
+      </div>
+      </div>
+    </div>
+    <!-- -----portfolio------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/myproj1 (1).jpg" class="myproj"  />
+            <div class="layer">
+              <h3>Code Pen</h3>
+              <p>
+                It's clone of CodePen which the best place to build, test, and discover front-end code.
+                Components used <br><span> React.js</span>
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/myproj2 (1).jpg"  class="myproj" />
+            <div class="layer">
+              <h3>Weather APP</h3>
+              <p>
+               It gives us the condition of the atmosphere for a particular city
+               Components used <br><span> HTML <br> CSS <br> JavaScript</span>
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Instagram Clone</h3>
+              <p>
+                The app that connects you to the talented people around the
+                world.Just a little amount of code is remaining <br>App link will be available soon..
+                
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+    <!-- -----contact----- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> roysid1708@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9330112587</p>
+            <div class="socialmedia-icons">
+              <a href="https://www.linkedin.com/in/siddharth-roy-1935291b8/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/sid0417"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/s.i.d_roy_1708/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <a href="image/SR_resume.pdf" download class="btn btn2"
+              >Download CV
+            </a>
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="YourEmail"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright © Siddharth,Made with <i class="fa-solid fa-heart"></i> by
+          Siddharth
+        </p>
+      </div>
+    </div>
+  </section>
+    <!-- -------JS----- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // script
+      var tablinks_skills= document.getElementsByClassName("tab-links-skills");
+      var tabcontents_skills= document.getElementsByClassName("tab-contents-skills");
+      function opentabSkills(tabname) {
+        for (tablink of tablinks_skills) {
+          tablink.classList.remove("active-link-skills");
+        }
+        for (tabcontent of tabcontents_skills) {
+          tabcontent.classList.remove("active-tab-skills");
+        }
+        event.currentTarget.classList.add("active-link-skills");
+        document.getElementById(tabname).classList.add("active-tab-skills");
+      }
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz_umqxfzoYUkwxk-Sd7bEdYMGVkbZVlUXbNxrUXYnKq9mIqWaggzJMQY_SAxp4Jm8mGQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "I'm Siddharth Roy",
+          "a Tech enthusiast",
+          "a Coder and",
+          "a Frontend Developer",
+        ],
+        typeSpeed: 60,
+      });
+    </script>
+    <script src="style.js"></script>
+  </body>
+</html>
